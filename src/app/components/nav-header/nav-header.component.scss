@@ -1,0 +1,52 @@
+@font-face {
+   font-family: 'Barlow-Condensed-Montserrat';
+   src: url('../../../assets/fonts/Montserrat-Regular.ttf');
+}
+
+#header_main {
+   width: 100%;
+   
+   .header_container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+      gap: 800px;
+
+      .img_logo {
+         margin-left: 35px;
+      }
+      
+      .menu_space {
+         width: 100%;
+         height: 50px;
+         background-color: rgb(255 255 255 / 0.3);
+         -webkit-backdrop-filter: blur(10px);
+         backdrop-filter: blur(10px);
+         display: flex;
+         align-items: center;
+   
+         .space_option {
+            display: flex;
+            gap: 30px;
+            padding: 0 30px;
+   
+            .menu_description {
+               color: white;
+               text-decoration: none;
+               font-family: 'Barlow-Condensed-Montserrat';
+            }
+
+            .menu_description:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+   
+   }
+
+
+}
+
