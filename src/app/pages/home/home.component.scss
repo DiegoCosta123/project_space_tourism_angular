@@ -4,21 +4,99 @@
    box-sizing: border-box;
 }
 
+@font-face {
+   font-family: 'Barlow-Condensed-Light';
+   src: url('../../../assets/fonts/Barlow-Light.otf');
+}
+
+@font-face {
+   font-family: 'Barlow-Condensed-Regular';
+   src: url('../../../assets/fonts/Barlow-Regular.otf');
+}
+
+@font-face {
+   font-family: 'Bellefair-Regular';
+   src: url('../../../assets/fonts/Bellefair-Regular.ttf');
+}
+
 .project_content {
-   display: flex;
-   position: relative;
    width: 100%;
    height: 100%;
+   display: flex;
    background-color: #0B0D17;
-   
-   .img_space {
-      width: 100%;
-      opacity: 0.5;
-   }
+   background-image: url("../../../assets/imagens/Bitmap.svg");
+   background-repeat: no-repeat;
 
-   .nav_hesder {
-      position: absolute;
-      opacity: 1;
+   .page_main {
+      width: 100%;
+      height: 100vh;
+
+      .img_space {
+         opacity: 0.5;
+      }
+   
+      .nav_hesder {
+         opacity: 1;
+      }
+   
+      .page_container {
+         height: 79%;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         color: white;
+         padding: 0 100px;
+
+         .title_container {
+            width: 50%;
+            color: #D0D6F9;
+            margin-top: 80px;
+            
+            .title_content {
+               font-size: 1.3rem !important;
+               font-family: 'Barlow-Condensed-Regular';
+               font-weight: 100;
+               text-transform: uppercase;
+            }
+
+            .title_space {
+               font-size: 6.5rem !important;
+               font-family: 'Bellefair-Regular';
+               font-weight: 100;
+               text-transform: uppercase;
+               margin-top: 15px;
+               color: white;
+            }
+
+            .description_content {
+               width: 380px;
+               font-family: 'Barlow-Condensed-Light';
+               font-weight: 100;
+               line-height: 25px;
+               margin-top: 15px;
+            }
+         }
+
+         .circle_container {
+            width: 200px;
+            height: 200px;
+            border-radius: 300px;
+            background-color: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+
+            .text_exp {
+               font-family: 'Bellefair-Regular';
+               font-size: 1.7rem !important;
+               font-weight: 100;
+               text-transform: uppercase;
+            }
+         }
+      }
    }
+   
 }
 
